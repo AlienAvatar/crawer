@@ -1,4 +1,4 @@
-package model;
+package huxiu.model;
 
 public class HuxiuBean {
     private String title;

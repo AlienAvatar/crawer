@@ -1,6 +1,6 @@
-package database;
+package huxiu.database;
 
-import model.HuxiuBean;
+import huxiu.model.HuxiuBean;
 
 import java.sql.*;
 
@@ -20,7 +20,7 @@ public class JDBC {
         }
     }
 
-    public void insert(HuxiuBean huxiuBean){
+    public void insert(HuxiuBean huxiuBean) {
         //???? 表示通配符
         String sql = "insert into huxiu(title,author,content,`comment`) values (?,?,?,?)";
         PreparedStatement pst = null;
@@ -37,8 +37,6 @@ public class JDBC {
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("插入失败");
-        }finally {
-
         }
     }
 

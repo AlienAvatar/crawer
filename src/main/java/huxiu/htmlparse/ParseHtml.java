@@ -1,10 +1,9 @@
-package htmlparse;
+package huxiu.htmlparse;
 
-import httpbrower.HttpReponse;
-import model.HuxiuBean;
+import huxiu.httpbrower.HttpReponse;
+import huxiu.model.HuxiuBean;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
 
 public class ParseHtml {
     public static HuxiuBean parseHtml(){
@@ -13,7 +12,7 @@ public class ParseHtml {
         if(html != null){
             //将html解析成DOM结构
             Document document = Jsoup.parse(html);
-            String content = document.select(".article-content-wrap").get(0).text();
+            String content = document.select(".main").get(0).text();
             String author = document.select(".article-author").get(0).text();
             String title = document.select(".article-author").get(0).text();
             String comment = document.select(".article-pl").get(0).text();

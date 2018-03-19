@@ -1,8 +1,8 @@
-package excute;
+package huxiu.excute;
 
-import database.JDBC;
-import htmlparse.ParseHtml;
-import model.HuxiuBean;
+import huxiu.database.JDBC;
+import huxiu.htmlparse.ParseHtml;
+import huxiu.model.HuxiuBean;
 
 public class Excute {
     public static void main(String[] args) {

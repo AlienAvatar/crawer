@@ -1,4 +1,4 @@
-package httpbrower;
+package huxiu.httpbrower;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.client.config.RequestConfig;
